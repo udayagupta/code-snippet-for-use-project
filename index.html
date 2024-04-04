@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/he"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="utilities.css"> -->
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <title>Code Snippets for Use</title>
+</head>
+<body class="scroll-bar">
+    <div class="main">
+        <header style="text-align: center;">
+            <h1>Code Snippets for Use</h1>
+        </header>
+        <main>
+            <div class="form ">
+                <form action="">
+                    <label for="title">Title:</label>
+                    <input type="text" maxlength="120" name="title" id="title" placeholder="Enter a descriptive title" required>
+                    
+                    <label for="code" style="margin-top: 1rem;">Code:</label>
+                    <textarea spellcheck="false" class="scroll-bar" name="code" id="code" rows="5" placeholder="Enter the code here" required></textarea>
+                    <button tabindex="-1" class="button" style="margin-top: 1rem;" type="submit">Add new snippet</button>
+                </form>
+            </div>
+            <div style="margin-top: 1rem">
+                <h2>Code Snippets</h2>
+            </div>
+            <div class="code-snippets">
+                <!-- <div class="snippet snippet-lightMode">
+                    <h3>Add two numbers</h3>
+                    <button class="copy-code snippet-button" onclick="copyCode(this)"><i class="fa-solid fa-copy"></i></button>
+                    <button class="delete-code snippet-button" onclick="deleteSnippet(this)"><i class="fa-regular fa-trash-can"></i></button>
+                    <pre class="scroll-bar">
+                        <code>
+                            function(a, b)=> {
+                                return a + b
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="snippet">
+                    <h3>Add two numbers</h3>
+                    <button class="copy-code snippet-button" onclick="copyCode(this)"><i class="fa-solid fa-copy"></i></button>
+                    <button class="delete-code snippet-button" onclick="deleteSnippet(this)"><i class="fa-regular fa-trash-can"></i></button>
+                    <pre>
+                        <code>
+                            print("Hello World!")
+                        </code>
+                    </pre>
+                </div> -->
+            </div>
+            <div class="copied-msg">
+                <p>Code copied to clipboard!</p>
+            </div>   
+        </main>
+        <footer>
+            <div class="confirmation-msg">
+                <p>Are you sure you want to delete the Code Snippet ?</p>
+                <button class="yes confirmation-button button">Yes</button>
+                <button class="no confirmation-button button">No</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
+</body>
+</html>
